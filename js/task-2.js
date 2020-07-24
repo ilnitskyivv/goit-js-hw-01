@@ -1,11 +1,25 @@
-const total = 100;
-const ordered = 50;
-// const ordered = 20;
-// const ordered = 80;
-// const ordered = 130;
+const invoice = 150;
+const stock = 100;
 
-const message =
-  total > ordered
-    ? "Замовлення оформлено, з вами зв'яжеться менеджер"
-    : 'На складі недостатньо товарів!';
+// Write code under this line
+let message;
+
+if (invoice > stock) {
+  message = 'На складе недостаточно товаров!';
+} else {
+  message = 'Заказ оформлен, с вами свяжется менеджер';
+}
+
 console.log(message);
+
+//если invoice равен 100
+// то значение message будет равно
+// 'Заказ оформлен, с вами свяжется менеджер'
+
+//если invoice равен 50
+// то значение message будет равно
+// 'Заказ оформлен, с вами свяжется менеджер'
+
+//если invoice равен 150
+// то значение message будет равно
+// 'На складе недостаточно товаров!'
